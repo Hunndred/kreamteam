@@ -1,0 +1,83 @@
+nav button {
+  background: none;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+  margin-top: 20px;
+}
+.topnav button {
+  background: #1b1464;
+  border: none;
+  padding: 0;
+}
+@media (width >= 40em) {
+  .topnav button {
+    display: none;
+  }
+}
+.topnav__open[aria-expanded=true] + .topnav__menu {
+  translate: 0;
+}
+@media (prefers-reduced-motion) {
+  .topnav__open[aria-expanded=true] + .topnav__menu {
+    opacity: 1;
+  }
+}
+.topnav__close {
+  display: block;
+  margin-inline-start: auto;
+  margin-block-end: 8rem;
+}
+.topnav__close img {
+  width: 2.5rem;
+}
+@media (width < 40em) {
+  .topnav__menu {
+    position: fixed;
+    inset: 0;
+    padding: 1.5rem;
+    background-color: white;
+    translate: 100vw 0;
+    transition: translate 0.5s ease-in-out;
+  }
+}
+@media (width < 40em) and (prefers-reduced-motion) {
+  .topnav__menu {
+    translate: 0;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+}
+.topnav__links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+@media (width < 40em) {
+  .topnav__links {
+    flex-direction: column;
+  }
+}
+.topnav__item {
+  list-style-type: none;
+}
+
+.topnav__link {
+  color: white;
+  text-decoration: none;
+}
+@media (width <= 40em) {
+  .topnav__link {
+    color: blue;
+  }
+}
+
+#topmenu {
+  margin-top: 40px;
+}/*# sourceMappingURL=topnav.css.map */

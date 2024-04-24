@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wosilat</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" async></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="images/virgin mary thanny w.png"
+            alt="virgin_mary_logo"
+            id="logo"
+        /></a>
+      </div>
+      <nav>
+        <span id="nav-label" hidden>Navigation</span>
+        <button background: none
+          id="btnOpen"
+          class="topnav__open"
+          aria-expanded="false"
+          aria-labelledby="nav-label"
+        >
+          <img src="images/hamburger.svg" alt="" width="40" height="24" />
+        </button>
+        <div
+          id="topmenu"
+          class="topnav__menu"
+          role="dialog"
+          aria-labelledby="nav-label"
+        >
+          <button class="topnav__close" id="btnClose" aria-label="Close">
+            <img
+              src="images/close-svgrepo-com.svg"
+              alt=""
+              width="28"
+              height="27"
+            />
+          </button>
+          <ul class="topnav__links">
+            <li class="topnav__item">
+              <a href="index.html" class="topnav__link">home</a>
+            </li>
+            <li class="topnav__item">
+              <a href="shop.html" class="topnav__link">shop</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="logo-btn">
+          <button>
+            <a href="shop.html"
+              ><img src="images/PHOTO-2023-12-02-20-35-27.png" alt=""
+            /></a>
+          </button>
+        </div>
+      </section>
+      <section class="mailing">
+        <div class="bg-zinc-100 px-8 py-12">
+          <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h2 class="font-bold text-xl mb-2">
+                SIGN UP TO WOSILAT'S HEART MAILING LIST
+              </h2>
+              <p class="mb-4">
+                Sign up for exclusive early sale access and tailored new
+                arrivals
+              </p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-zinc-600 hover:text-zinc-800"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-zinc-600 hover:text-zinc-800"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="text-zinc-600 hover:text-zinc-800"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row items-start md:items-center justify-between"
+            >
+              <input
+                type="text"
+                placeholder="EMAIL ADDRESS"
+                class="p-2 border border-zinc-300 rounded-md mb-4 md:mb-0 md:mr-4"
+              />
+              <button
+                class="px-6 py-2 bg-white border border-zinc-300 rounded-md hover:bg-zinc-200"
+              >
+                SIGN UP
+              </button>
+            </div>
+          </div>
+          <hr class="my-8" />
+          <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <h3 class="font-semibold">ABOUT</h3>
+            </div>
+            <div>
+              <h3 class="font-semibold">CUSTOMER SERVICE</h3>
+            </div>
+            <div>
+              <h3 class="font-semibold contact">CONTACT US</h3>
+              <ul class="mt-2 space-y-1">
+                <li>
+                  <a href="tel:+12027692427" class="hover:underline"
+                    >+1 (202) 769-2427</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:email@example.com" class="hover:underline"
+                    >Email us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer">
+      <footer>
+        <p>copyright &copy; 2024, Wosilat. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

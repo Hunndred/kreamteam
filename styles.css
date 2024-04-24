@@ -1,0 +1,283 @@
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+  margin-top: 20px;
+}
+.topnav button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+@media (width >= 40em) {
+  .topnav button {
+    display: none;
+  }
+}
+.topnav__open[aria-expanded=true] + .topnav__menu {
+  translate: 0;
+}
+@media (prefers-reduced-motion) {
+  .topnav__open[aria-expanded=true] + .topnav__menu {
+    opacity: 1;
+  }
+}
+.topnav__close {
+  display: block;
+  margin-inline-start: auto;
+  margin-block-end: 8rem;
+}
+.topnav__close img {
+  width: 2.5rem;
+}
+@media (width < 40em) {
+  .topnav__menu {
+    position: fixed;
+    inset: 0;
+    padding: 1.5rem;
+    background-color: white;
+    translate: 100vw 0;
+    transition: translate 0.5s ease-in-out;
+  }
+}
+@media (width < 40em) and (prefers-reduced-motion) {
+  .topnav__menu {
+    translate: 0;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+}
+.topnav__links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+@media (width < 40em) {
+  .topnav__links {
+    flex-direction: column;
+  }
+}
+.topnav__item {
+  list-style-type: none;
+}
+
+.topnav__link {
+  color: white;
+  text-decoration: none;
+}
+@media (width <= 40em) {
+  .topnav__link {
+    color: blue;
+  }
+}
+
+#topmenu {
+  margin-top: 40px;
+}
+
+* {
+  border: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1b1464;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  position: sticky;
+}
+
+#logo {
+  width: 50px;
+  height: auto;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-right: auto;
+}
+
+img {
+  width: 3.5rem;
+}
+
+.hero {
+  width: 100vw;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+section {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+section .logo-btn {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+@media (width > 40em) {
+  section .logo-btn button {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: fixed;
+    cursor: pointer;
+  }
+  section .logo-btn button img {
+    width: 600px;
+    height: auto;
+  }
+  section .logo-btn button a {
+    margin-right: 50%;
+  }
+}
+section button {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: none;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  position: fixed;
+  cursor: pointer;
+}
+section button img {
+  width: 200px;
+  height: auto;
+}
+section button a {
+  margin-right: 50%;
+}
+
+#topmenu {
+  margin-top: 40px;
+}
+
+/* shop styles */
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.gallery img {
+  width: 190px;
+  height: auto;
+}
+@media (width > 40em) {
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  .gallery img {
+    width: 390px;
+    height: auto;
+  }
+}
+
+.description {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  margin-top: -40px;
+}
+.description h4 {
+  margin: 30px auto;
+}
+.description p {
+  margin: 5px auto;
+}
+.description .size {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4px;
+}
+.description .size button {
+  background: #bf0707;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  padding: 5px 8px;
+  margin-top: 10px;
+  transition: ease;
+}
+.description .size button:hover {
+  background-color: #1b1464;
+  color: #bf0707;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+.mailing {
+  color: white;
+}
+
+footer {
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* foot styles */
+.mb-2 {
+  font-size: 16px;
+}
+
+.mb-4 {
+  font-size: 12px;
+}
+
+input {
+  background-color: #1b1464;
+  border-bottom: 1px solid white;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.py-2 {
+  color: white;
+  background-color: #bf0707;
+}
+
+.font-semibold {
+  font-size: 15px;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contact ul {
+  display: none;
+  opacity: 0;
+}/*# sourceMappingURL=styles.css.map */
